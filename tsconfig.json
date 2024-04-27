@@ -37,7 +37,8 @@
     "**/*.cjs",
     "**/*.js",
     ".next/types/**/*.ts",
-    "src/app/components/dbImports.jsx"
+    "src/components/dbImports.jsx",
+    "src/actions/Ingler.jsx"
   ],
   "exclude": ["node_modules"]
 }
