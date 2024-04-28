@@ -1,15 +1,7 @@
-2. Add styling
+## Ing btw
 
-3. Schedule reset
+TODO:
 
-4. Add kevin knap
-
---- Side quests
-
-1. Drizzle ORM website til at integrere <button>
-
-2. HTTP polling til at opdatere hjemmesiden
-
-3. Tailwind/Bootstrap til at style
-
-4. Bedre forståelse af React DB
+1. Add WebSocket
+2. Add count reset @00:00.
+3. Fix count state?

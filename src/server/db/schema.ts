@@ -13,5 +13,5 @@ export const createTable = pgTableCreator((name) => `ingcounter_${name}`);
 
 export const ing = pgTable("ing", {
   id: serial("ing_id").primaryKey(),
-  ingle: integer("ings"),
+  ingle: integer("ings").notNull(),
 });

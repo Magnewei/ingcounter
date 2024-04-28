@@ -5,8 +5,8 @@ import { IncrementIngle } from "../actions/IngleAction";
 export function Ingle() {
   let isClicked = false;
   const sendForm = () => {
-    const what = isClicked ? IncrementIngle() : undefined;
-    return what;
+    const formAction = isClicked ? IncrementIngle() : undefined;
+    return formAction;
   };
 
   return (

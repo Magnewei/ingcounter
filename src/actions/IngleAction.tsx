@@ -11,11 +11,13 @@ export async function IncrementIngle(): Promise<void> {
     .where(eq(ing.id, 1));
 
   if (!increment) throw new Error("Bad ing increment");
+
+  // Refresh data.
   revalidatePath("/");
 }
 
-export async function IngCount() {
+export async function IngCount(): Promise<number> {
   const ing = await db.query.ing.findFirst();
   if (!ing) throw new Error("Bad ing count");
-  return ing?.ingle;
+  return ing.ingle;
 }
