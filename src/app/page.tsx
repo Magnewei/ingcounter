@@ -1,17 +1,16 @@
-import { eq, sql } from "drizzle-orm";
 import React from "react";
-import { db } from "~/server/db/index";
-import { ing } from "~/server/db/schema";
-import { IngButton, IngParagraph, MongoButton } from "../actions/Ingler";
+import Footer from "~/components/Footer";
+import { Ingle } from "~/components/Ingle";
+import { IngCount } from "../actions/IngleAction";
 
 export default async function HomePage() {
-  const IngCount = await db.query.ing.findFirst();
   return (
-    <div>
-      <div>
-        <p>{IngCount?.ingle}</p>
-        <MongoButton />
+    <>
+      <div className="flex h-screen flex-col items-center justify-center gap-2 space-x-2 bg-black text-white">
+        <h1 className="text-7xl font-bold">[ ING COUNTER ]</h1>
+        <p className="text-7xl font-bold">{IngCount()}</p>
+        <Ingle />
       </div>
-    </div>
+    </>
   );
 }
