@@ -19,5 +19,6 @@ export async function IncrementIngle(): Promise<void> {
 export async function IngCount(): Promise<number> {
   const ing = await db.query.ing.findFirst();
   if (!ing) throw new Error("Bad ing count");
+
   return ing.ingle;
 }

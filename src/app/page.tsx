@@ -10,7 +10,7 @@ export default async function HomePage() {
     <div className={style}>
       <h1>[ ING COUNTER ]</h1>
       <p>{IngCount()}</p>
-      <p>Hej </p>
+      <p>Kevin </p>
       <Ingle />
     </div>
   );
